@@ -20,7 +20,7 @@ trait.plot <- function(tree, dat, cols, lab=names(cols), str=NULL, class=NULL,
       dat <- matrix(dat)
       rownames(dat) <- nm
     } else {
-      stop("dat must be a matrix")
+      stop("dat must be a data frame")
     }
   }
   if ( !all(tree$tip.label %in% rownames(dat)) )
